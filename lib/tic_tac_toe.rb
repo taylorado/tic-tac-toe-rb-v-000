@@ -133,5 +133,5 @@ def play(board)
   else
       puts "Congratulations #{winner(board)}!"
     end
-  
+
 end
