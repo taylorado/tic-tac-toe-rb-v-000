@@ -128,12 +128,12 @@ def play(board)
   until won?(board) || draw?(board)
       puts "Player #{current_player(board)}, please enter 1-9:"
     turn(board)
-    if draw?(board)
-        puts "Cat's Game!"
-    elsif won?(board)
-        puts "Congratulations #{winner(board)}!"
-      end
   end
+  if draw?(board)
+      puts "Cat's Game!"
+  elsif won?(board)
+      puts "Congratulations #{winner(board)}!"
+    end
 
-puts "The Game Has Ended."
+#puts "The Game Has Ended."
 end
