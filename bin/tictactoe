@@ -1,3 +1,24 @@
 #!/usr/bin/env ruby
 
 require_relative '../lib/tic_tac_toe'
+
+
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+puts "Welcome to Tic Tac Toe!"
+display_board(board)
+
+until won?(board)
+  turn(board)
+end
+
+if draw?(board)
+  puts "It's a draw"
+else
+  puts "Player #{winner?(board)} is the winner!"
+  puts "Winning positions: #{won?(board)}."
+end
+display_board(board)
+
+# Make sure to execute #play below
+play(board)
