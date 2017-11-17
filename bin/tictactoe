@@ -15,7 +15,7 @@ end
 if draw?(board)
   puts "It's a draw"
 else
-  puts "Player #{winner?(board)} is the winner!"
+  puts "Player #{winner(board)} is the winner!"
   puts "Winning positions: #{won?(board)}."
 end
 display_board(board)
