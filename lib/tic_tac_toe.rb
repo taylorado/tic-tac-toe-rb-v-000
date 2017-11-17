@@ -127,5 +127,11 @@ end
 def play(board)
   until won?(board) || draw?(board)
     turn(board)
+    if draw?(board)
+      puts "Cat's Game!"
+    else
+      puts "Congratulations #{winner(board)}!"
+      puts "Winning positions: #{won?(board)}."
+    end
   end
 end
