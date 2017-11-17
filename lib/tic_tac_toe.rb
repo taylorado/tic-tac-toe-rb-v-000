@@ -29,7 +29,7 @@ def input_to_index(input)
 end
 
 def move(board, index, char="X")
-  board[index] = current_player(board)
+  board[index] = char
 end
 
 def turn(board)
@@ -38,7 +38,7 @@ def turn(board)
   index = input_to_index(input)
 
   if valid_move?(board,index)
-    move(board, index)
+    move(board, index,current_player(board))
     display_board(board)
   else
     turn(board)
