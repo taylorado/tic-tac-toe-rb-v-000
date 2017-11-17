@@ -122,3 +122,10 @@ def winner(board)
       return  nil
     end
 end
+
+
+def play(board)
+  until won?(board) || draw?(board)
+    turn(board)
+  end
+end
