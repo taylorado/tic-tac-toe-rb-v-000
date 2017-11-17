@@ -20,5 +20,4 @@ else
 end
 display_board(board)
 
-# Make sure to execute #play below
-play(board)
+
