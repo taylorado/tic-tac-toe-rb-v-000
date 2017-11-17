@@ -127,7 +127,6 @@ end
 
 def play(board)
   until over?(board)
-  #    puts "Player #{current_player(board)}, please enter 1-9:"
     turn(board)
   end
   if won?(board)
@@ -136,5 +135,5 @@ def play(board)
     puts "Cat's Game!"
     end
 
-#puts "The Game Has Ended."
+puts "The Game Has Ended."
 end
