@@ -126,7 +126,7 @@ end
 
 
 def play(board)
-  until won?(board) || draw?(board)
+  until over?(board)
   #    puts "Player #{current_player(board)}, please enter 1-9:"
     turn(board)
   end
