@@ -10,7 +10,6 @@ end
 
 def turn_count(board)
   return board.count("X") + board.count("O")
-#aleternatively, use each iterator and increase count by one when encountering "X" or "O"
 end
 
 
@@ -21,17 +20,6 @@ def valid_move?(board, index)
     puts "Invalid move.  Try again."
      false
   end
-end
-
-# re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
-def position_taken?(board, index)
-  if board[index] == "X" || board[index] == "O"
-    return true
-  else
-    return false
-    # May need to account for other possibilities?
-  end
-
 end
 
 
