@@ -19,5 +19,3 @@ else
   puts "Winning positions: #{won?(board)}."
 end
 display_board(board)
-
-
