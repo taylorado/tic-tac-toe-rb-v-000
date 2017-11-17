@@ -17,7 +17,7 @@ def valid_move?(board, index)
   if index.between?(0,8) && !position_taken?(board, index)
      true
   else
-    puts "Invalid move.  Try again."
+  #  puts "Invalid move.  Try again."
      false
   end
 end
