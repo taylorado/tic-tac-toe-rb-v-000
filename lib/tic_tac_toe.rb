@@ -33,7 +33,7 @@ def move(board, index, token="X")
 end
 
 def turn(board)
-
+  puts "Player #{current_player(board)}, please enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
 
@@ -127,7 +127,7 @@ end
 
 def play(board)
   until won?(board) || draw?(board)
-      puts "Player #{current_player(board)}, please enter 1-9:"
+  #    puts "Player #{current_player(board)}, please enter 1-9:"
     turn(board)
   end
   if draw?(board)
